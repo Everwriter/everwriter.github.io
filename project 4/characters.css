@@ -1,0 +1,135 @@
+img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+.myButton{
+  float:right;
+}
+
+.blood {
+  font-family: nosifer;
+       color: #FF0000;
+  font-size:4em;
+  transition: all .25s ease;
+    -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
+  animation: drip 2.5s infinite alternate;
+
+}
+
+@keyframes drip {
+    to {
+        text-shadow:
+       4px 4px 1px #300000,
+       4px 6px 1px #400000,
+       4px 8px 1px #500000,
+       4px 10px 1px #600000,
+       4px 12px 1px #700000,
+       4px 14px 1px #800000,
+       4px 16px 1px #900000,
+       4px 18px 1px #A00000,
+       4px 20px 1px #B00000,
+       4px 22px 1px #C00000,
+       4px 24px 1px #D00000,
+       4px 26px 1px #E00000,
+       4px 28px 1px #F00000,
+       4px 30px 1px #FA0000,
+       4px 32px 1px #FB0000,
+       4px 34px 1px #FC0000,
+       4px 36px 1px #FD0000,
+       4px 38px 1px #FE0000,
+       4px 40px 2px #FF0000;
+    }
+}
+
+.container4{
+  width:90%;
+  height:150px;
+  display: flex;
+  margin: auto;
+  overflow: auto;
+}
+
+.container4>.imgbox{
+  border:1px solid #ff4772;
+  border-radius: 10px;
+  width:20%;
+  height:98%;
+  margin: auto;
+}
+
+footer{
+  width:100%;
+  height:500px;
+  background-color: red;
+  margin-top: 3%;
+}
+footer>.top{
+  height:33%;
+  width:100%;
+  display: flex;
+}
+footer>.top>.txtbox{
+  height:100%;
+  width:25%;
+  text-align: center;
+  padding-top: 1%;
+}
+footer>.top>.txtbox>a{
+  color:black;
+  text-decoration: none;
+}
+
+
+
+footer>.middle{
+  height:33%;
+  width:90%;
+  margin: auto;
+  border-top: 2px solid white;
+  display:flex;
+}
+
+footer>.middle>.empty{
+  width:60%;
+  height:100%;
+}
+footer>.middle>.frame{
+  width:40%;
+  height:100%;
+}
+footer>.middle>.frame>.txtbox{
+  margin-top: 10%;
+  margin-left: 25%;
+  height:24%;
+  width:100%;
+  color:black;
+}
+
+footer>.middle>.frame>.imgcontainer{
+  height:50%;
+  width:100%;
+  display: flex;
+  margin-left: 20%;
+}
+footer>.middle>.frame>.imgcontainer>.imgbox{
+  width:8%;
+  height:50%;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+footer>.middle>.frame>.imgcontainer>.imgbox>a>img{
+  width:100%;
+  height:100%;
+}
+
+footer>.bottom{
+  height:33%;
+  width:100%;
+}
+footer>.bottom>.txtbox{
+  color:pink;
+  text-align: center;
+  padding-top: 6%;
+  font-size: 12px;
+}
