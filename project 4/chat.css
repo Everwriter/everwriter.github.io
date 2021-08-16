@@ -1,0 +1,270 @@
+.blood {
+  font-family: nosifer;
+       color: #FF0000;
+  font-size:4em;
+  transition: all .25s ease;
+    -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
+  animation: drip 2.5s infinite alternate;
+
+}
+
+@keyframes drip {
+    to {
+        text-shadow:
+       4px 4px 1px #300000,
+       4px 6px 1px #400000,
+       4px 8px 1px #500000,
+       4px 10px 1px #600000,
+       4px 12px 1px #700000,
+       4px 14px 1px #800000,
+       4px 16px 1px #900000,
+       4px 18px 1px #A00000,
+       4px 20px 1px #B00000,
+       4px 22px 1px #C00000,
+       4px 24px 1px #D00000,
+       4px 26px 1px #E00000,
+       4px 28px 1px #F00000,
+       4px 30px 1px #FA0000,
+       4px 32px 1px #FB0000,
+       4px 34px 1px #FC0000,
+       4px 36px 1px #FD0000,
+       4px 38px 1px #FE0000,
+       4px 40px 2px #FF0000;
+    }
+}
+
+.container{
+  width:90%;
+  height:150px;
+  display: flex;
+  margin: auto;
+  overflow: auto;
+}
+
+.container>.imgbox{
+  border:1px solid #ff4772;
+  border-radius: 10px;
+  width:20%;
+  height:98%;
+  margin: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 20px auto;
+    font-family: "Lato";
+    font-weight: 300;
+  }
+
+  form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  input {
+    font-family: mononspace;
+  }
+
+  a {
+    color: #ffc587;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  #wrapper,
+  #loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #ffc587;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+
+  }
+
+  #loginform {
+    padding-top: 18px;
+    text-align: center;
+  }
+
+  #loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  #chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: white;
+    height: 300px;
+    width: 530px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+
+  #usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+  }
+
+  #name {
+    border-radius: 4px;
+    border: 1px solid ;
+    padding: 2px 8px;
+  }
+
+  #submitmsg,
+  #enter{
+    background: #ff9800;
+    border: 2px solid #e65100;
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  .error {
+    color: #ff0000;
+  }
+
+  #menu {
+    padding: 15px 25px;
+    display: flex;
+  }
+
+  #menu p.welcome {
+    flex: 1;
+  }
+
+  a#exit {
+    color: white;
+    background: #c62828;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .msgln {
+    margin: 0 0 5px 0;
+  }
+
+  .msgln span.left-info {
+    color: orangered;
+  }
+
+  .msgln span.chat-time {
+    color: #666;
+    font-size: 60%;
+    vertical-align: super;
+  }
+
+  .msgln b.user-name, .msgln b.user-name-left {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+
+  .msgln b.user-name-left {
+    background: orangered;
+  }
+
+  footer{
+    width:100%;
+    height:500px;
+    background-color: red;
+    margin-top: 3%;
+  }
+  footer>.top{
+    height:33%;
+    width:100%;
+    display: flex;
+  }
+  footer>.top>.txtbox{
+    height:100%;
+    width:25%;
+    text-align: center;
+    padding-top: 1%;
+  }
+  footer>.top>.txtbox>a{
+    color:black;
+    text-decoration: none;
+  }
+
+
+
+  footer>.middle{
+    height:33%;
+    width:90%;
+    margin: auto;
+    border-top: 2px solid white;
+    display:flex;
+  }
+
+  footer>.middle>.empty{
+    width:60%;
+    height:100%;
+  }
+  footer>.middle>.frame{
+    width:40%;
+    height:100%;
+  }
+  footer>.middle>.frame>.txtbox{
+    margin-top: 10%;
+    margin-left: 25%;
+    height:24%;
+    width:100%;
+    color:black;
+  }
+
+  footer>.middle>.frame>.imgcontainer{
+    height:50%;
+    width:100%;
+    display: flex;
+    margin-left: 20%;
+  }
+  footer>.middle>.frame>.imgcontainer>.imgbox{
+    width:8%;
+    height:50%;
+    border-radius: 50%;
+    margin-left: 5%;
+  }
+  footer>.middle>.frame>.imgcontainer>.imgbox>a>img{
+    width:100%;
+    height:100%;
+  }
+
+  footer>.bottom{
+    height:33%;
+    width:100%;
+  }
+  footer>.bottom>.txtbox{
+    color:pink;
+    text-align: center;
+    padding-top: 6%;
+    font-size: 12px;
+  }
